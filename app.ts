@@ -164,11 +164,11 @@ window.onload = () => { //With the Gun I get usually about 60 FPS (after startup
     for (let i = 0; i < entities.length; i++) {
       for (let j = 0; j < entities[i].length; j++) {
         if (entities[i][j] === 3) {
-          ctx.fillRect(i * 4, j * 4, 4, 4);
+          ctx.fillRect(i * entitySize, j * entitySize, entitySize, entitySize);
           entities[i][j] = 1;
         }
         if (entities[i][j] === 2) {
-          ctx.clearRect(i * 4, j * 4, 4, 4);
+          ctx.clearRect(i * entitySize, j * entitySize, entitySize, entitySize);
           entities[i][j] = 0;
         }
       }
